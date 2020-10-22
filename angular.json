@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "LeafletTest"
+    }
+  },
+  "defaultProject": "LeafletTest",
+  "cli": {
+    "analytics": "9aad01f2-ef40-4736-933e-321b2d3e8889"
+  }
 }
