@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+         "label": "NgServeWeb",
+         "type": "npm",
+         "script": "ng serve",
+         "isBackground": true,
+         "group": "build",
+         "problemMatcher": {
+            "owner": "typescript",
+            "source": "ts",
+            "applyTo": "closedDocuments",
+            "fileLocation": ["relative", "${cwd}"],
+            "pattern": "$tsc",
+            "background": {
+               "activeOnStart": true,
+               "beginsPattern": "^.*Angular Live Development Server.*",
+               "endsPattern": "^.*Compiled successfully.*"
+            }
+         }
+      },
+      {
+         "label": "BuildElectronWin",
+         "type": "npm",
+         "script": "electron:windows",
+         "isBackground": true,
+         "group": "build",
+         "problemMatcher": {
+            "owner": "typescript",
+            "source": "ts",
+            "applyTo": "closedDocuments",
+            "fileLocation": ["relative", "${cwd}"],
+            "pattern": "$tsc",
+            "background": {
+               "activeOnStart": true
+            }
+         }
+      }
+   ]
+}
